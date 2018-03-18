@@ -107,11 +107,13 @@ public class UserDaoImpl implements UserDao{
 	public static void main(String[] args) throws Exception {
 		UserDaoImpl u=new UserDaoImpl();
 		List <User>l=u.getbyId(2L);
-		/*for(User uh:(List<User>)l)
+		for(User uh:(List<User>)l)
 		{
-			System.out.println("id: "+uh.getId()+"Name: "+uh.getName()+"Number: "+uh.getNumber()+"Email: "+uh.getEmail()+"Date: "+uh.getDate());
+			//System.out.println("id: "+uh.getId()+"Name: "+uh.getName()+"Number: "+uh.getNumber()+"Email: "+uh.getEmail()+"Date: "+uh.getDate());
 			
-		}*/
+			uh.setName("Sakshi");
+			u.update(uh);
+		}
 	     
 		
 	}
